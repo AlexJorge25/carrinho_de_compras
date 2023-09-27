@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/icons8-shopping-cart-30.png" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
@@ -15,43 +16,55 @@
 -remover um item;
 -mostrar o total contábil dos itens inseridos.
 -->
+
 <body>
-    <section>
-        <div class="painel">
-            <div>
+    <main class="corpo_do_site">
+        <section class="tela_opcoes">
+            <div class="painel_do_site">
+                <h2>Cadastrar</h2>
+                <div>
+                    <label>Nome produto:</label>
+                    <input type="text" placeholder="Nome produto" id="nome_produto">
+                </div>
+                <div>
+                    <label>Unidades:</label>
+                    <input type="number" min="0" placeholder="Unidades" id="unidade_produto">
+                </div>
+                <div>
+                    <label>Valor:</label>
+                    <input type="number" min="0" placeholder="Valor" id="valor_produto">
+                </div>
+                <div>
+                    <label>Descrição:</label>
+                    <input type="text" placeholder="Descrição" id="descricao_produto">
+                </div>
+                <div class="botoes">
+                    <button class="botao_enviar botao">Enviar</button>
+                    <button class="botao_excluir botao">Excluir</button>
+                </div>
                 
             </div>
-        </div>
-    </section>
-    <table class="table">
-        <thead>
-            <tr>
-                <th scope="col">#</th>
-                <th scope="col">First</th>
-                <th scope="col">Last</th>
-                <th scope="col">Handle</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <th scope="row">1</th>
-                <td>Mark</td>
-                <td>Otto</td>
-                <td>@mdo</td>
-            </tr>
-            <tr>
-                <th scope="row">2</th>
-                <td>Jacob</td>
-                <td>Thornton</td>
-                <td>@fat</td>
-            </tr>
-            <tr>
-                <th scope="row">3</th>
-                <td colspan="2">Larry the Bird</td>
-                <td>@twitter</td>
-            </tr>
-        </tbody>
-    </table>
+            <div class="resultado">
+                <h5 >Resultado:<span id="resultado_preco"></span></h5>
+            </div>
+        </section>
+        <section class="tela_tabela">
+            <table class="table tabela_do_site">
+                <thead class="table-dark">
+                    <tr>
+                        <th scope="col">Produto</th>
+                        <th scope="col">Unidades</th>
+                        <th scope="col">Valor</th>
+                        <th scope="col">Descrição</th>
+                        <th scope="col">Ações</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+
+            </table>
+        </section>
+    </main>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"

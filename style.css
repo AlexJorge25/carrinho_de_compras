@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+.corpo_do_site {
+    display: flex;
+    flex-direction: row;
+}
+
+.tela_opcoes {
+    color: white;
+    font-family: monospace;
+    font-size: 1.1em;
+    width: 50vw;
+    height: 100vh;
+    border-right: 5px solid #212529;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column ;
+}
+
+.painel_do_site {
+    border-radius: 10%;
+    padding: 20px;
+    background-color: #212529;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+.painel_do_site h2 {
+    text-align: center;
+    font-family: monospace;
+
+
+}
+.painel_do_site div {
+    display: flex;
+    align-items: center;
+}
+
+.painel_do_site label {
+    width: 129px;
+    margin-right: 30px;
+}
+
+.painel_do_site input {
+    border-radius: 10px;
+    outline: none;
+    padding: 5px;
+    border: 1px solid transparent;
+    transition: 0.1s;
+}
+.painel_do_site input:hover {
+    border: 1px solid white;
+    box-shadow: 0px  0px 5px  1px white;
+}
+
+.botoes {
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+}
+
+.botao {
+    padding:5px 20px;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    margin: 8px;
+    font-weight: 400;
+    cursor: pointer;
+
+}
+
+.botao_enviar {
+    background-color: rgb(44, 255, 44);
+    color:#212529;
+    transform: translateY(0);
+    transition: transform 150ms, box-shadow 150ms;
+    
+}
+
+.botao_enviar:hover {
+    border: 1px solid rgb(44, 255, 44);
+    background-color: transparent;
+    color: rgb(44, 255, 44);
+    box-shadow: 0px  0px 5px  1px rgb(44, 255, 44);
+    transform: translateY(-2px);
+}
+.botao_excluir {
+    background-color: rgb(255, 27, 27);
+    color:#212529;
+    transition: transform 150ms, box-shadow 150ms;
+    
+}
+
+.botao_excluir:hover {
+    border: 1px solid rgb(255, 0, 0);
+    background-color: transparent;
+    color: rgb(255, 27, 27);
+    box-shadow: 0px  0px 5px  1px rgb(255, 0, 0);
+    transform: translateY(-2px);
+}
+
+
+.tela_tabela {
+    font-family: monospace;
+    font-size: 1.1em;
+    width: 70vw;
+    height: 190vh;
+}
+.resultado {
+    margin-top: 20px;
+    color: #212529;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 20px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+}
