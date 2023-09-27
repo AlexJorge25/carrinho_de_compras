@@ -20,8 +20,8 @@
 <body>
     <main class="corpo_do_site">
         <section class="tela_opcoes">
-            <div class="painel_do_site">
-                <h2>Cadastrar</h2>
+            <form class="painel_do_site" id="forms">
+                <h2 id="titulo">Cadastrar</h2>
                 <div>
                     <label>Nome produto:</label>
                     <input type="text" placeholder="Nome produto" id="nome_produto">
@@ -39,17 +39,17 @@
                     <input type="text" placeholder="Descrição" id="descricao_produto">
                 </div>
                 <div class="botoes">
-                    <button class="botao_enviar botao">Enviar</button>
+                    <button class="botao_enviar botao" onclick="enviar_dados()" id="botaoGravar">Enviar</button>
                     <button class="botao_excluir botao">Excluir</button>
                 </div>
                 
-            </div>
+            </form>
             <div class="resultado">
                 <h5 >Resultado:<span id="resultado_preco"></span></h5>
             </div>
         </section>
         <section class="tela_tabela">
-            <table class="table tabela_do_site">
+            <table class="table tabela_do_site" id="minha_tabela">
                 <thead class="table-dark">
                     <tr>
                         <th scope="col">Produto</th>
